@@ -26,7 +26,7 @@ A Swifty way to deal with and normalize orientations on iOS. Deals with Device, 
   s.subspec 'Video' do |sp|
     sp.dependency 'Orientation/Core'
     sp.source_files = 'Pod/Classes/Video/*.{swift}'
-    sp.frameworks = 'AVFountation'
+    sp.frameworks = 'AVFoundation'
   end
 
   s.subspec 'All' do |sp|
