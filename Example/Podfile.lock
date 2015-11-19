@@ -1,0 +1,21 @@
+PODS:
+  - Orientation (0.1.0):
+    - Orientation/All (= 0.1.0)
+  - Orientation/All (0.1.0):
+    - Orientation/Core
+    - Orientation/Video
+  - Orientation/Core (0.1.0)
+  - Orientation/Video (0.1.0):
+    - Orientation/Core
+
+DEPENDENCIES:
+  - Orientation (from `../`)
+
+EXTERNAL SOURCES:
+  Orientation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Orientation: e7ff7cb8325c14fb1b5a46d655abc771ff4d504b
+
+COCOAPODS: 0.39.0
