@@ -16,7 +16,7 @@ A Swifty way to deal with and normalize orientations on iOS. Deals with Device, 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.default_subspec = 'All'
+  s.default_subspec = 'Core'
   s.frameworks = 'UIKit'
 
   s.subspec 'Core' do |sp|
