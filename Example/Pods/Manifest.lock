@@ -1,11 +1,11 @@
 PODS:
-  - Orientation (0.1.0):
-    - Orientation/All (= 0.1.0)
-  - Orientation/All (0.1.0):
+  - Orientation (0.1.1):
+    - Orientation/All (= 0.1.1)
+  - Orientation/All (0.1.1):
     - Orientation/Core
     - Orientation/Video
-  - Orientation/Core (0.1.0)
-  - Orientation/Video (0.1.0):
+  - Orientation/Core (0.1.1)
+  - Orientation/Video (0.1.1):
     - Orientation/Core
 
 DEPENDENCIES:
@@ -16,6 +16,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Orientation: e7ff7cb8325c14fb1b5a46d655abc771ff4d504b
+  Orientation: 939d00bdd04a8c261a271b6c8d81d419254daa22
 
 COCOAPODS: 0.39.0

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '42DC5553762313474A4FFF3A'
+               BlueprintIdentifier = '93D6ED1AF8A57901EDC5292D'
                BlueprintName = 'Orientation'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Orientation.framework'>

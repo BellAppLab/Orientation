@@ -60,8 +60,21 @@ Orientation is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "Orientation"
+pod "Orientation/Core"
 ```
+
+To work with AVFoundation:
+
+```ruby
+pod "Orientation/Video"
+```
+
+To have everything (that is and will be):
+```ruby
+pod "Orientation/All"
+```
+
+**Note:** Do not add `Orientation` to your project as it is equivalent to `All` (unless you know what you're doing)
 
 ## Author
 

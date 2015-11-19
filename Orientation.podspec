@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Orientation"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A Swifty way to deal with and normalize orientations on iOS."
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ A Swifty way to deal with and normalize orientations on iOS. Deals with Device, 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.default_subspec = 'Core'
+  s.default_subspec = 'All'
   s.frameworks = 'UIKit'
 
   s.subspec 'Core' do |sp|
