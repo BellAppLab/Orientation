@@ -7,10 +7,9 @@ public extension UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
         case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeLeft
-        case .LandscapeRight: return .LandscapeRight
+        case .LandscapeLeft: return .LandscapeRight
+        case .LandscapeRight: return .LandscapeLeft
         default: return .Portrait //Defaults to Portrait
         }
     }
@@ -25,8 +24,8 @@ public extension AVCaptureVideoOrientation
         {
         case .Portrait: return .Portrait
         case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeLeft
-        case .LandscapeRight: return .LandscapeRight
+        case .LandscapeLeft: return .LandscapeRight
+        case .LandscapeRight: return .LandscapeLeft
         }
     }
 }

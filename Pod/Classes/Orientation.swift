@@ -9,8 +9,9 @@ public class Orientation
         if let result = self.singleton {
             return result
         }
-        self.singleton = Orientation()
-        return self.singleton!
+        let result = Orientation()
+        self.singleton = result
+        return result
     }
     
     //MARK: Setup
@@ -35,17 +36,11 @@ public class Orientation
     public func check() -> UIDeviceOrientation
     {
         let orientation = UIDevice.currentDevice().orientation
-        if !orientation.isValidInterfaceOrientation {
-            return .Portrait //defaults to portrait
+        switch orientation
+        {
+        case .Unknown, .FaceUp, .FaceDown: self.current = .Portrait
+        default: self.current = orientation
         }
-        if orientation.isFlat {
-            if !self.current.isValidInterfaceOrientation {
-                //defaults to portrait
-                self.current = .Portrait
-            }
-            return self.current
-        }
-        self.current = orientation
         return self.current
     }
 }
