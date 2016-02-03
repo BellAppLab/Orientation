@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Orientation"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A Swifty way to deal with and normalize orientations on iOS."
 
   s.description      = <<-DESC
