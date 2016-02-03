@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0EC8E7901FA4A887EF17BB0974B43FF8 /* Pods-Orientation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E52EA9D63436C95E465089FD88821A49 /* Pods-Orientation_Tests-dummy.m */; };
-		1AAA1213F8681283B25A605355961FFF /* AVFountation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD82D32D146A89C54630693E8924E7B /* AVFountation.framework */; };
-		20834C086255E106514161C2A5E6CAFF /* Orientation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BFB8ABFE05B4E196BC22762CF4580D3 /* Orientation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		310370F7867429DE1B4BF7D20BE07B9E /* Orientation+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933698E5E9E6E5E71C8FA657885CCF54 /* Orientation+AVFoundation.swift */; };
-		79E4BE032ECE669B6F5AB724B743521A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF55B18369DDEBABC1E0989E1048C /* UIKit.framework */; };
+		11F24206C3FDA20C3E869645F06E55B4 /* Orientation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94489D4410EBA7DC023371A3C6ED49BE /* Orientation-dummy.m */; };
+		650C750FCAC10A0BFD4424D7CB804DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		80E3E8E0EED6C856683372E07348CAFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
 		8294A8ADFF1FEE762EF693E57F8526AB /* Pods-Orientation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 877A54A19DB5BFEB9DB74D98032527CC /* Pods-Orientation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAA8E041123067143D5C0142315B9588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C751BEF0976249405134C9B76DF144 /* Foundation.framework */; };
-		BDA0E46D26969725EBBE0F25F0561732 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C751BEF0976249405134C9B76DF144 /* Foundation.framework */; };
-		D28B7329CF1455EAB94BA544CE811CFB /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43586E32E64143520A2C5B4C8595E5 /* Orientation.swift */; };
-		E2EE0047455739EEC083E3A24B2B0C5B /* Orientation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3BA7EE7B70AC3BA744F15BB45159BF /* Orientation-dummy.m */; };
+		B3BA04C8952762F0BA23F2A982F34D7D /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918B0EA968B584ED15192943A159C09 /* Orientation.swift */; };
+		BDA0E46D26969725EBBE0F25F0561732 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		F3B5EEA85FD86C83DAC1E6AC2749DC09 /* Orientation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14867FF130063D73BA4F50F0566D6334 /* Orientation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,46 +22,43 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 13F7EFF0453ED852F3E090E2497CE0A5;
+			remoteGlobalIDString = E56D8E733EB1F453AF8CAE20B7D11AA8;
 			remoteInfo = Orientation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02E09E83474C3E63E50247595C340688 /* Pods-Orientation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Orientation_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		14867FF130063D73BA4F50F0566D6334 /* Orientation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Orientation-umbrella.h"; sourceTree = "<group>"; };
+		2D274F04F13DE2A7C39DCF68320DD159 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4BA343A66E880FA14DCD9B8C6543F6 /* Orientation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orientation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455EDC11131F13317FD9EFE110533EB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B384CE7F55628D241B9EA9BFC4D89B /* Pods-Orientation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Orientation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		56726440D6B4226A2CF3D8B845AB738E /* Pods-Orientation_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Orientation_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56C751BEF0976249405134C9B76DF144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AD82D32D146A89C54630693E8924E7B /* AVFountation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFountation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFountation.framework; sourceTree = DEVELOPER_DIR; };
-		5BFB8ABFE05B4E196BC22762CF4580D3 /* Orientation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Orientation-umbrella.h"; sourceTree = "<group>"; };
-		86EB80354D0E9EA62ED3A020074EC693 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		706FED5521944862F40C23C7D02F4C4E /* Orientation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Orientation.xcconfig; sourceTree = "<group>"; };
+		71F2CC66E2067B89539722A7775501DE /* Orientation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Orientation-prefix.pch"; sourceTree = "<group>"; };
 		877A54A19DB5BFEB9DB74D98032527CC /* Pods-Orientation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Orientation_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8DB461237C6D48C4C67BDD10CADEF414 /* Pods-Orientation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Orientation_Tests.modulemap"; sourceTree = "<group>"; };
 		902BF1D7E107FD3F0631D665A37C2825 /* Pods-Orientation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Orientation_Tests-resources.sh"; sourceTree = "<group>"; };
-		933698E5E9E6E5E71C8FA657885CCF54 /* Orientation+AVFoundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Orientation+AVFoundation.swift"; sourceTree = "<group>"; };
-		9564C8CA06695193DE8F0EBDEB5D3A89 /* Orientation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Orientation.modulemap; sourceTree = "<group>"; };
-		A6C6F465176CBE5B9F703536DC5770B2 /* Orientation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Orientation-prefix.pch"; sourceTree = "<group>"; };
-		B53AF55B18369DDEBABC1E0989E1048C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		94489D4410EBA7DC023371A3C6ED49BE /* Orientation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Orientation-dummy.m"; sourceTree = "<group>"; };
+		A3D38A8589BE1D4A9B3CEDBA0AA3CC01 /* Orientation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Orientation.modulemap; sourceTree = "<group>"; };
 		B8E196B3A8084B845285E36A028D6C82 /* Pods-Orientation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Orientation_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B918B0EA968B584ED15192943A159C09 /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CA6FAFC0D0BDABC6D00F7BE5E97419C2 /* Pods_Orientation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Orientation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8304CCD20A2930D1506A241CF31F0A3 /* Orientation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Orientation.xcconfig; sourceTree = "<group>"; };
-		DE43586E32E64143520A2C5B4C8595E5 /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 		E52EA9D63436C95E465089FD88821A49 /* Pods-Orientation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Orientation_Tests-dummy.m"; sourceTree = "<group>"; };
 		E694608A96D352ACCC0C184D402AF7E6 /* Pods-Orientation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Orientation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD3BA7EE7B70AC3BA744F15BB45159BF /* Orientation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Orientation-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E07453D5E835309AE2D1E82AF47D73B /* Frameworks */ = {
+		60E4D20A83EA8A540C1DCF3CF619228A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAA1213F8681283B25A605355961FFF /* AVFountation.framework in Frameworks */,
-				AAA8E041123067143D5C0142315B9588 /* Foundation.framework in Frameworks */,
-				79E4BE032ECE669B6F5AB724B743521A /* UIKit.framework in Frameworks */,
+				650C750FCAC10A0BFD4424D7CB804DA9 /* Foundation.framework in Frameworks */,
+				80E3E8E0EED6C856683372E07348CAFB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,20 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8C4B930979E99D225B8321AA197D52 /* Video */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B9CB39508D4B56050A4BCD26B39A2389 /* Pod */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
-			name = Video;
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D7AFCA5E38D44FD3A2BED21921285E7C /* iOS */,
-			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		2D5C67748DAC5C1A32D66A88D72DF111 /* Targets Support Files */ = {
@@ -111,28 +99,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4818A411B171E76C55EA7FFDF6A1B705 /* Development Pods */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D1B5A126ED641BC1769C8D48E9D8CEB /* Orientation */,
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
 			);
-			name = "Development Pods";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C6DAAFD643F5414E94F094D3E3C6AC4 /* Classes */ = {
+		53446F8AA9F5636B430774DD9C103364 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EC92E98A85141C8E8B3728335D6A7316 /* Video */,
+				C4FA171CB7841D52278231A7819E8655 /* Classes */,
 			);
-			path = Classes;
+			path = Pod;
 			sourceTree = "<group>";
 		};
-		6D1B5A126ED641BC1769C8D48E9D8CEB /* Orientation */ = {
+		6D5A0B00E3A8295ACC2F71A197F277A4 /* Orientation */ = {
 			isa = PBXGroup;
 			children = (
-				8D8CF7F69174B15D1B37B55B7BF01722 /* Core */,
-				DD8201237F4FD831C24A7D08F48CE74C /* Support Files */,
-				0F8C4B930979E99D225B8321AA197D52 /* Video */,
+				867D2F4D75F036510D391D7B4BDE2281 /* Core */,
+				C793D64F8E2C2EC29649D3FE3322D708 /* Support Files */,
 			);
 			name = Orientation;
 			path = ../..;
@@ -160,75 +147,49 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				4818A411B171E76C55EA7FFDF6A1B705 /* Development Pods */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				C787F26CF96FFB92DEB45F1F8B574739 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				3F8D30C192CC6A03337F3C5C7E2F907D /* Products */,
 				2D5C67748DAC5C1A32D66A88D72DF111 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D8CF7F69174B15D1B37B55B7BF01722 /* Core */ = {
+		867D2F4D75F036510D391D7B4BDE2281 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FCBBD768DE7EE1E262D9AD96700B2676 /* Pod */,
+				53446F8AA9F5636B430774DD9C103364 /* Pod */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		9AF17849BB8F773FCC18973C9FD1919A /* Classes */ = {
+		C4FA171CB7841D52278231A7819E8655 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DE43586E32E64143520A2C5B4C8595E5 /* Orientation.swift */,
+				B918B0EA968B584ED15192943A159C09 /* Orientation.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		B9CB39508D4B56050A4BCD26B39A2389 /* Pod */ = {
+		C787F26CF96FFB92DEB45F1F8B574739 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C6DAAFD643F5414E94F094D3E3C6AC4 /* Classes */,
+				6D5A0B00E3A8295ACC2F71A197F277A4 /* Orientation */,
 			);
-			path = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D7AFCA5E38D44FD3A2BED21921285E7C /* iOS */ = {
+		C793D64F8E2C2EC29649D3FE3322D708 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5AD82D32D146A89C54630693E8924E7B /* AVFountation.framework */,
-				56C751BEF0976249405134C9B76DF144 /* Foundation.framework */,
-				B53AF55B18369DDEBABC1E0989E1048C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DD8201237F4FD831C24A7D08F48CE74C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				86EB80354D0E9EA62ED3A020074EC693 /* Info.plist */,
-				9564C8CA06695193DE8F0EBDEB5D3A89 /* Orientation.modulemap */,
-				D8304CCD20A2930D1506A241CF31F0A3 /* Orientation.xcconfig */,
-				FD3BA7EE7B70AC3BA744F15BB45159BF /* Orientation-dummy.m */,
-				A6C6F465176CBE5B9F703536DC5770B2 /* Orientation-prefix.pch */,
-				5BFB8ABFE05B4E196BC22762CF4580D3 /* Orientation-umbrella.h */,
+				2D274F04F13DE2A7C39DCF68320DD159 /* Info.plist */,
+				A3D38A8589BE1D4A9B3CEDBA0AA3CC01 /* Orientation.modulemap */,
+				706FED5521944862F40C23C7D02F4C4E /* Orientation.xcconfig */,
+				94489D4410EBA7DC023371A3C6ED49BE /* Orientation-dummy.m */,
+				71F2CC66E2067B89539722A7775501DE /* Orientation-prefix.pch */,
+				14867FF130063D73BA4F50F0566D6334 /* Orientation-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Orientation";
-			sourceTree = "<group>";
-		};
-		EC92E98A85141C8E8B3728335D6A7316 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				933698E5E9E6E5E71C8FA657885CCF54 /* Orientation+AVFoundation.swift */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
-		FCBBD768DE7EE1E262D9AD96700B2676 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9AF17849BB8F773FCC18973C9FD1919A /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,34 +203,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5069FBFA8D93FAFFC75AA31D2CBA7F3 /* Headers */ = {
+		61FD6CE38B7B16EBCEF574803D014150 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20834C086255E106514161C2A5E6CAFF /* Orientation-umbrella.h in Headers */,
+				F3B5EEA85FD86C83DAC1E6AC2749DC09 /* Orientation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13F7EFF0453ED852F3E090E2497CE0A5 /* Orientation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE5FF2E15ACF9A217662E24912CB5C83 /* Build configuration list for PBXNativeTarget "Orientation" */;
-			buildPhases = (
-				D9DA319CD97334CAF2666CEF50EBFA88 /* Sources */,
-				4E07453D5E835309AE2D1E82AF47D73B /* Frameworks */,
-				F5069FBFA8D93FAFFC75AA31D2CBA7F3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Orientation;
-			productName = Orientation;
-			productReference = 3E4BA343A66E880FA14DCD9B8C6543F6 /* Orientation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		CEF19514669675D17DED949A4E1E145D /* Pods-Orientation_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A8E7372351EE6CC0357AC14409790B8 /* Build configuration list for PBXNativeTarget "Pods-Orientation_Tests" */;
@@ -286,6 +230,23 @@
 			name = "Pods-Orientation_Tests";
 			productName = "Pods-Orientation_Tests";
 			productReference = CA6FAFC0D0BDABC6D00F7BE5E97419C2 /* Pods_Orientation_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E56D8E733EB1F453AF8CAE20B7D11AA8 /* Orientation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55A80882C647F34B18C916CB4BDF3D9 /* Build configuration list for PBXNativeTarget "Orientation" */;
+			buildPhases = (
+				21A3509D469A1BE18244EFB66A6EE0E0 /* Sources */,
+				60E4D20A83EA8A540C1DCF3CF619228A /* Frameworks */,
+				61FD6CE38B7B16EBCEF574803D014150 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Orientation;
+			productName = Orientation;
+			productReference = 3E4BA343A66E880FA14DCD9B8C6543F6 /* Orientation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,28 +270,27 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13F7EFF0453ED852F3E090E2497CE0A5 /* Orientation */,
+				E56D8E733EB1F453AF8CAE20B7D11AA8 /* Orientation */,
 				CEF19514669675D17DED949A4E1E145D /* Pods-Orientation_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		21A3509D469A1BE18244EFB66A6EE0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F24206C3FDA20C3E869645F06E55B4 /* Orientation-dummy.m in Sources */,
+				B3BA04C8952762F0BA23F2A982F34D7D /* Orientation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82309839955940A1C8BC716BE2D30C54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0EC8E7901FA4A887EF17BB0974B43FF8 /* Pods-Orientation_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9DA319CD97334CAF2666CEF50EBFA88 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				310370F7867429DE1B4BF7D20BE07B9E /* Orientation+AVFoundation.swift in Sources */,
-				E2EE0047455739EEC083E3A24B2B0C5B /* Orientation-dummy.m in Sources */,
-				D28B7329CF1455EAB94BA544CE811CFB /* Orientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +300,7 @@
 		7A5330AE8868E49BDBB93631D4D997C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Orientation;
-			target = 13F7EFF0453ED852F3E090E2497CE0A5 /* Orientation */;
+			target = E56D8E733EB1F453AF8CAE20B7D11AA8 /* Orientation */;
 			targetProxy = 68C82A70A82D87236F7D4C44FC86934D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -410,36 +370,9 @@
 			};
 			name = Release;
 		};
-		3DF24973EAACDCC7B624131BB82C5EE9 /* Release */ = {
+		4AE0BA96ED5593113E83329867B19F0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8304CCD20A2930D1506A241CF31F0A3 /* Orientation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Orientation/Orientation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Orientation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Orientation/Orientation.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Orientation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4976EA1B97599BC93E184F86B613FEB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8304CCD20A2930D1506A241CF31F0A3 /* Orientation.xcconfig */;
+			baseConfigurationReference = 706FED5521944862F40C23C7D02F4C4E /* Orientation.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -535,6 +468,33 @@
 			};
 			name = Debug;
 		};
+		9FF42260CDC8EB85AA426B1A84969B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706FED5521944862F40C23C7D02F4C4E /* Orientation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Orientation/Orientation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Orientation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Orientation/Orientation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Orientation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,11 +516,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE5FF2E15ACF9A217662E24912CB5C83 /* Build configuration list for PBXNativeTarget "Orientation" */ = {
+		D55A80882C647F34B18C916CB4BDF3D9 /* Build configuration list for PBXNativeTarget "Orientation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4976EA1B97599BC93E184F86B613FEB2 /* Debug */,
-				3DF24973EAACDCC7B624131BB82C5EE9 /* Release */,
+				4AE0BA96ED5593113E83329867B19F0C /* Debug */,
+				9FF42260CDC8EB85AA426B1A84969B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

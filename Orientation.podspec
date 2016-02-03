@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Orientation"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "A Swifty way to deal with and normalize orientations on iOS."
 
   s.description      = <<-DESC
@@ -16,11 +16,11 @@ A Swifty way to deal with and normalize orientations on iOS. Deals with Device, 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.default_subspec = 'All'
+  s.default_subspec = 'Core'
   s.frameworks = 'UIKit'
 
   s.subspec 'Core' do |sp|
-    sp.source_files = 'Pod/Classes/*.{swift}'
+    sp.source_files = 'Pod/Classes/Orientation.swift'
   end
 
   s.subspec 'Video' do |sp|
