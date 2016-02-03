@@ -36,10 +36,21 @@ public class Orientation
     public func check() -> UIDeviceOrientation
     {
         let orientation = UIDevice.currentDevice().orientation
-        switch orientation
+        if self.current == .Unknown
         {
-        case .Unknown, .FaceUp, .FaceDown: self.current = .Portrait
-        default: self.current = orientation
+            switch orientation
+            {
+            case .Unknown, .FaceUp, .FaceDown: self.current = .Portrait
+            default: self.current = orientation
+            }
+        }
+        else
+        {
+            switch orientation
+            {
+            case .Unknown, .FaceUp, .FaceDown: break
+            default: self.current = orientation
+            }
         }
         return self.current
     }
