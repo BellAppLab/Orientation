@@ -21,7 +21,7 @@ public class Orientation
     }
     
     private init() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didRotate:", name: UIDeviceOrientationDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Orientation.didRotate(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
         UIDevice.currentDevice().beginGeneratingDeviceOrientationNotifications()
         self.check()
     }
