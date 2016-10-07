@@ -1,16 +1,17 @@
+import UIKit
 import AVFoundation
 
 
 public extension UIDeviceOrientation
 {
-    public func toVideo() -> AVCaptureVideoOrientation
+    public var asVideo: AVCaptureVideoOrientation
     {
         switch self
         {
-        case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeRight
-        case .LandscapeRight: return .LandscapeLeft
-        default: return .Portrait //Defaults to Portrait
+        case .portraitUpsideDown: return .portraitUpsideDown
+        case .landscapeLeft: return .landscapeRight
+        case .landscapeRight: return .landscapeLeft
+        default: return .portrait //Defaults to Portrait
         }
     }
 }
@@ -18,14 +19,14 @@ public extension UIDeviceOrientation
 
 public extension AVCaptureVideoOrientation
 {
-    public func toDevice() -> UIDeviceOrientation
+    public var asDevice: UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
-        case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeRight
-        case .LandscapeRight: return .LandscapeLeft
+        case .portrait: return .portrait
+        case .portraitUpsideDown: return .portraitUpsideDown
+        case .landscapeLeft: return .landscapeRight
+        case .landscapeRight: return .landscapeLeft
         }
     }
 }

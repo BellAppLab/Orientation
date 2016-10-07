@@ -5,7 +5,7 @@ public class Orientation
 {
     //MARK: Singleton
     private weak static var singleton: Orientation?
-    public static func shared() -> Orientation {
+    public static var shared: Orientation {
         if let result = self.singleton {
             return result
         }
@@ -16,31 +16,31 @@ public class Orientation
     
     //MARK: Setup
     deinit {
-        UIDevice.currentDevice().endGeneratingDeviceOrientationNotifications()
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        UIDevice.current.endGeneratingDeviceOrientationNotifications()
+        NotificationCenter.default.removeObserver(self)
     }
     
     private init() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Orientation.didRotate(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
-        UIDevice.currentDevice().beginGeneratingDeviceOrientationNotifications()
+        NotificationCenter.default.addObserver(self, selector: #selector(Orientation.didRotate(_:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         self.check()
     }
     
-    @objc private final func didRotate(notification: NSNotification)
+    @objc private final func didRotate(_ notification: NSNotification)
     {
         self.check()
     }
     
     //MARK: Orientation
-    private(set) final var current: UIDeviceOrientation = .Unknown
+    private(set) final var current: UIDeviceOrientation = .unknown
     public func check() -> UIDeviceOrientation
     {
-        let orientation = UIDevice.currentDevice().orientation
-        if self.current == .Unknown
+        let orientation = UIDevice.current.orientation
+        if self.current == .unknown
         {
             switch orientation
             {
-            case .Unknown, .FaceUp, .FaceDown: self.current = .Portrait
+            case .unknown, .faceUp, .faceDown: self.current = .portrait
             default: self.current = orientation
             }
         }
@@ -48,7 +48,7 @@ public class Orientation
         {
             switch orientation
             {
-            case .Unknown, .FaceUp, .FaceDown: break
+            case .unknown, .faceUp, .faceDown: break
             default: self.current = orientation
             }
         }
@@ -63,11 +63,11 @@ public extension UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
-        case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeLeft
-        case .LandscapeRight: return .LandscapeRight
-        default: return .Unknown
+        case .portrait: return .portrait
+        case .portraitUpsideDown: return .portraitUpsideDown
+        case .landscapeLeft: return .landscapeLeft
+        case .landscapeRight: return .landscapeRight
+        default: return .unknown
         }
     }
     
@@ -75,11 +75,11 @@ public extension UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
-        case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeLeft
-        case .LandscapeRight: return .LandscapeRight
-        default: return .All
+        case .portrait: return .portrait
+        case .portraitUpsideDown: return .portraitUpsideDown
+        case .landscapeLeft: return .landscapeLeft
+        case .landscapeRight: return .landscapeRight
+        default: return .all
         }
     }
     
@@ -87,9 +87,9 @@ public extension UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait, .PortraitUpsideDown: return .Portrait
-        case .LandscapeLeft, .LandscapeRight: return .Landscape
-        default: return .Portrait //Defaults to portrait
+        case .portrait, .portraitUpsideDown: return .portrait
+        case .landscapeLeft, .landscapeRight: return .landscape
+        default: return .portrait //Defaults to portrait
         }
     }
     
@@ -97,11 +97,11 @@ public extension UIDeviceOrientation
     {
         switch self
         {
-        case .Portrait: return .Up
-        case .PortraitUpsideDown: return .Down
-        case .LandscapeLeft: return .Right
-        case .LandscapeRight: return .Left
-        default: return .Up //Defaults to up
+        case .portrait: return .up
+        case .portraitUpsideDown: return .down
+        case .landscapeLeft: return .right
+        case .landscapeRight: return .left
+        default: return .up //Defaults to up
         }
     }
 }
@@ -113,11 +113,11 @@ public extension UIInterfaceOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
-        case .PortraitUpsideDown: return .PortraitUpsideDown
-        case .LandscapeLeft: return .LandscapeLeft
-        case .LandscapeRight: return .LandscapeRight
-        default: return .Unknown
+        case .portrait: return .portrait
+        case .portraitUpsideDown: return .portraitUpsideDown
+        case .landscapeLeft: return .landscapeLeft
+        case .landscapeRight: return .landscapeRight
+        default: return .unknown
         }
     }
 }
@@ -129,11 +129,11 @@ public extension UIInterfaceOrientationMask
     {
         switch self
         {
-        case UIInterfaceOrientationMask.Portrait: return .Portrait
-        case UIInterfaceOrientationMask.PortraitUpsideDown: return .PortraitUpsideDown
-        case UIInterfaceOrientationMask.LandscapeLeft, UIInterfaceOrientationMask.Landscape: return .LandscapeLeft
-        case UIInterfaceOrientationMask.LandscapeRight: return .LandscapeRight
-        default: return .Portrait //Defaults to portrait
+        case UIInterfaceOrientationMask.portrait: return .portrait
+        case UIInterfaceOrientationMask.portraitUpsideDown: return .portraitUpsideDown
+        case UIInterfaceOrientationMask.landscapeLeft, UIInterfaceOrientationMask.landscape: return .landscapeLeft
+        case UIInterfaceOrientationMask.landscapeRight: return .landscapeRight
+        default: return .portrait //Defaults to portrait
         }
     }
 }
@@ -145,8 +145,8 @@ public extension UIPrintInfoOrientation
     {
         switch self
         {
-        case .Portrait: return .Portrait
-        case .Landscape: return .LandscapeLeft
+        case .portrait: return .portrait
+        case .landscape: return .landscapeLeft
         }
     }
 }
@@ -158,10 +158,10 @@ public extension UIImageOrientation
     {
         switch self
         {
-        case .Down, .DownMirrored: return .PortraitUpsideDown
-        case .Left, .LeftMirrored: return .LandscapeRight
-        case .Right, .RightMirrored: return .LandscapeLeft
-        case .Up, .UpMirrored: return .Portrait
+        case .down, .downMirrored: return .portraitUpsideDown
+        case .left, .leftMirrored: return .landscapeRight
+        case .right, .rightMirrored: return .landscapeLeft
+        case .up, .upMirrored: return .portrait
         }
     }
     
@@ -169,7 +169,7 @@ public extension UIImageOrientation
     {
         switch self
         {
-        case .LeftMirrored, .DownMirrored, .RightMirrored, .UpMirrored: return true
+        case .leftMirrored, .downMirrored, .rightMirrored, .upMirrored: return true
         default: return false
         }
     }
@@ -177,14 +177,14 @@ public extension UIImageOrientation
     public func mirror() -> UIImageOrientation {
         switch self
         {
-        case .Down: return .DownMirrored
-        case .Left: return .LeftMirrored
-        case .Right: return .RightMirrored
-        case .Up: return .UpMirrored
-        case .DownMirrored: return .Down
-        case .LeftMirrored: return .Left
-        case .RightMirrored: return .Right
-        case .UpMirrored: return .Up
+        case .down: return .downMirrored
+        case .left: return .leftMirrored
+        case .right: return .rightMirrored
+        case .up: return .upMirrored
+        case .downMirrored: return .down
+        case .leftMirrored: return .left
+        case .rightMirrored: return .right
+        case .upMirrored: return .up
         }
     }
 }
