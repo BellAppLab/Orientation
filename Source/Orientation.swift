@@ -32,7 +32,9 @@ public class Orientation
     }
     
     //MARK: Orientation
-    private(set) final var current: UIDeviceOrientation = .unknown
+    private final var current: UIDeviceOrientation = .unknown
+    
+    @discardableResult
     public func check() -> UIDeviceOrientation
     {
         let orientation = UIDevice.current.orientation
@@ -59,7 +61,7 @@ public class Orientation
 
 public extension UIDeviceOrientation
 {
-    public func toInterface() -> UIInterfaceOrientation
+    public var asInterface: UIInterfaceOrientation
     {
         switch self
         {
@@ -71,7 +73,7 @@ public extension UIDeviceOrientation
         }
     }
     
-    public func toInterfaceMask() -> UIInterfaceOrientationMask
+    public var toInterfaceMask: UIInterfaceOrientationMask
     {
         switch self
         {
@@ -83,7 +85,7 @@ public extension UIDeviceOrientation
         }
     }
     
-    public func toPrint() -> UIPrintInfoOrientation
+    public var toPrint: UIPrintInfoOrientation
     {
         switch self
         {
@@ -93,7 +95,7 @@ public extension UIDeviceOrientation
         }
     }
     
-    public func toImage() -> UIImageOrientation
+    public var toImage: UIImageOrientation
     {
         switch self
         {
@@ -109,7 +111,7 @@ public extension UIDeviceOrientation
 
 public extension UIInterfaceOrientation
 {
-    public func toDevice() -> UIDeviceOrientation
+    public var toDevice: UIDeviceOrientation
     {
         switch self
         {
@@ -125,7 +127,7 @@ public extension UIInterfaceOrientation
 
 public extension UIInterfaceOrientationMask
 {
-    public func toDevice() -> UIDeviceOrientation
+    public var toDevice: UIDeviceOrientation
     {
         switch self
         {
@@ -141,7 +143,7 @@ public extension UIInterfaceOrientationMask
 
 public extension UIPrintInfoOrientation
 {
-    public func toDevice() -> UIDeviceOrientation
+    public var toDevice: UIDeviceOrientation
     {
         switch self
         {
@@ -154,7 +156,7 @@ public extension UIPrintInfoOrientation
 
 public extension UIImageOrientation
 {
-    public func toDevice() -> UIDeviceOrientation
+    public var toDevice: UIDeviceOrientation
     {
         switch self
         {
@@ -174,7 +176,7 @@ public extension UIImageOrientation
         }
     }
     
-    public func mirror() -> UIImageOrientation {
+    public var mirror: UIImageOrientation {
         switch self
         {
         case .down: return .downMirrored
