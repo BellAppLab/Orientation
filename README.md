@@ -75,7 +75,9 @@ cd toYourProjectsFolder
 git submodule add -b submodule --name Orientation https://github.com/BellAppLab/Orientation.git
 ```
 
-Navigate to the new Orientation folder and drag the Pods folder to your Xcode project.
+Navigate to the new Orientation folder and drag the `Source` folder to your Xcode project.
+
+**Note: ** If you're not using `AVFoundation` on your project, just remove the reference to the `Video` folder.
 
 ## Author
 
