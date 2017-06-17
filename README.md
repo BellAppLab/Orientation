@@ -2,7 +2,7 @@
 
 A Swifty way to deal with and normalize orientations on iOS.
 
-_v0.3.0_
+_v0.4.0_
 
 ## Usage
 
