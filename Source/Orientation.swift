@@ -28,11 +28,15 @@ public class Orientation
     
     @objc private final func didRotate(_ notification: NSNotification)
     {
-        self.check()
+        let orientation = self.check()
+        self.onChange?(orientation)
     }
     
+    public typealias OrientationCallback = (UIDeviceOrientation) -> Void
+    public var onChange: OrientationCallback?
+    
     //MARK: Orientation
-    private final var current: UIDeviceOrientation = .unknown
+    final var current: UIDeviceOrientation = .unknown
     
     @discardableResult
     public func check() -> UIDeviceOrientation
